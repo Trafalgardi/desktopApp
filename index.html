@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="floating-labels.css" rel="stylesheet">
+
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="content">
+      <header id="desktop-app-title-bar">
+      	<div class="resize-handle top"></div>
+      	<div class="resize-handle left"></div>
+        <div class="option" id="headerClose"><svg aria-hidden="true" version="1.1" width="10" height="10"><path d="M 0,0 0,0.7 4.3,5 0,9.3 0,10 0.7,10 5,5.7 9.3,10 10,10 10,9.3 5.7,5 10,0.7 10,0 9.3,0 5,4.3 0.7,0 Z"></path></svg></div>
+        <div class="option" id="maximize"><svg aria-hidden="true" version="1.1" width="10" height="10"><path d="M 0,0 0,10 10,10 10,0 Z M 1,1 9,1 9,9 1,9 Z"></path></svg></div>
+        <div class="option" id="minimize"><svg aria-hidden="true" version="1.1" width="10" height="10"><path d="M 0,5 10,5 10,6 0,6 Z"></path></svg></div>
+      </header>
+      <div class="card">
+        <div class="text">
+          	<img src="lock.svg" width="64px" height="64px">
+          	<div class="title">
+              	<p>Система кадровой безопасности предприятия</p>
+          	</div>
+        </div>
+        <form class="form-signin">
+            <div class="form-label-group">
+              <input type="text" id="inputLogin" class="form-control" required autofocus>
+              <div class="form-control-placeholder" aria-hidden="true" for="inputLogin">Логин</div>
+            </div>
+
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" required autofocus>
+              <div class="form-control-placeholder" aria-hidden="true" for="inputPassword">Пароль</div>
+            </div>
+
+            <div class="div_button">
+              <button class="btn btn-outline-danger btn-left" type="button" id="btnClose">Закрыть приложение</button>
+              <button class="btn btn-primary btn-right" type="button" id="button">Вход</button>
+            </div>
+        </form>
+        <p class="mb-3 text-muted text-center date" id="async-reply">&copy; 2017-2018</p>
+      </div>
+    </div>
+    <script>window.$ = window.jQuery = require('./dist/js/jquery-3.1.0.min.js');</script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      //require('./loading.js')
+    </script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+header{
+  -webkit-app-region: drag;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  color: #a0a0a0;
+  align-self: stretch;
+}
+#desktop-app-title-bar{
+  height: 28px;
+  background: #24292e;
+  border-bottom: 1px solid #000;
+}
+.option{
+  width: 45px;
+  height: 100%
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 1rem;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+
+}
+.option:hover{
+  background-color: red;
+  color: #fff;
+}
+#minimize:hover, #maximize:hover{
+  background-color: #888;
+  color: #fff;
+}
+
+svg{
+  fill: currentColor;
+}
+#desktop-app-title-bar .resize-handle.top {
+  width: 100%;
+  height: 3px;
+}
+#desktop-app-title-bar .resize-handle.left {
+  width: 3px;
+  height: 28px;
+}
+#desktop-app-title-bar .resize-handle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-app-region: no-drag;
+}
+
+#content{
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  height: 100vh;
+}
+
+.form-signin {
+
+  width: 100%;
+  margin-bottom: -10px;
+  padding: 0px 48px 40px 36px;
+  
+}
+
+.form-label-group {
+  position: relative;
+  padding-top: 25px;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  transition: all 200ms;
+  opacity: 0.7;
+  pointer-events: none;
+  bottom: 3px;
+
+}
+
+.form-control:focus + .form-control-placeholder, 
+.form-control:valid + .form-control-placeholder {
+  transform: scale(.80) translateY(-30px) translateX(10px);
+  opacity: 1;
+}
+
+.form-control:invalid {
+  padding-bottom: 5px;
+  border-radius: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+
+}
+
+
+.form-control {
+  padding-bottom: 5px;
+  border-radius: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-bottom-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 6px 4px -4px rgba(0, 123, 255, 0.25);
+  
+}
+
+.card {
+  border: 0px;
+  margin: auto;
+  width: 350px;
+  min-height: 450px;
+}
+
+.card#registration {
+  box-shadow: 0 2px 2px 2px rgba(128, 128, 128, 0.25);
+  border-radius: 25px;
+  margin: auto;
+  min-height: 450px;
+}
+.registration#registration {
+  width: 100%;
+  min-height: 450px;
+}
+
+.leftSide {
+  padding-left: 0px;
+}
+
+.row > .form-label-group {
+  margin-bottom: 0rem;
+}
+
+.text-left {
+  margin-bottom: 15px;
+}
+.text{
+  padding: 48px 40px 0px;
+  margin-bottom: 25px;
+}
+.text img {
+  margin-left: 103px;
+  margin-right: 103px;
+}
+.text .title{
+
+  height: 64px; 
+  text-align: center;
+}
+.text .title p{
+  font-size: 16px; 
+  margin: 8px 0px;
+}
+
+.div_button {
+
+  height: 38px;
+  margin-top: 60px;
+
+}
+
+.div_button > .btn-left {
+  float: left;
+}
+.div_button > .btn-right {
+  float: right;
+}
+
+.date {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.side{
+    width: 778px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
